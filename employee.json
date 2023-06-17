@@ -1,0 +1,7 @@
+  Employee {
+    Name;
+	Departments (array);
+	Gender ;
+	Startdate ;
+	Salary
+  }

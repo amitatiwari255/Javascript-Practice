@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h1>Welcome to DOM API Methods </h1>
+<body>
+    <h2>Focus and Blur</h2>
+
+    <button type = "button" id = "open">Open Window</button>
+    <button type = "button" id = "focus">Focus</button>
+    <button type = "button" id = "blur">Blur</button>
+    <script>
+        let newWindow;
+        function openWith(){
+            newWindow = window.open("", "_blank" , "width=300" , "height=200")
+        }
+        function focusWith(){
+            newWindow.focus();
+        }
+
+        function blurWith(){
+            newWindow.blur();
+        }
+        document.getElementById("open").addEventListener("click", openWith)
+        document.getElementById("focus").addEventListener("click", focusWith)
+        document.getElementById("blur").addEventListener("click", blurWith)
+    </script>
+</body>

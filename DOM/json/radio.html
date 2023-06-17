@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="gender"></div>
+    <input type ="radio"  id ="radio1" name="html" value="Male">Male
+    <input type ="radio"  id ="radio2" name= "html" value="Female">Female
+    <input type ="radio"  id ="radio3" name="html"  value="Other">Other
+    <button type="button" onclick="clickHere()">Click Me</button>
+<script >
+    function clickHere(){
+        let x = document.getElementsByName("html")
+
+        for(let i = 0; i< x.length; i++){
+            if( x [i] .checked){
+                document.getElementById("gender").innerHTML=x[i].value;
+            
+            }
+        }
+    }
+    
+</script>
+</body>
+</html>

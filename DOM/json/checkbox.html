@@ -1,0 +1,25 @@
+<body>
+    <div id="checkbox_div">
+        <input type="checkbox" name="sName" id="c1"  value="Prathmesh">Prathmesh 
+        <input type="checkbox" name="sName" id = "c2" value="Suraj">Suraj 
+        <input type="checkbox" name="sName" id = "c3" value="Sumit">Sumit 
+        <input type="checkbox" name="sName" id = "c4" value="Sanket">Sanket 
+        <button type="button" onclick="enterMe()">Submit</button>
+    
+    </div>
+</body>
+<script>
+    
+      function enterMe(){
+        let x=document.getElementsByName("sName");
+        for(let i = 0; i< x.length; i++){
+            if( x [i] .checked){
+                document.getElementById("checkbox_div").innerHTML=x[i].value;
+            
+            }
+        }
+      }
+        
+</script>
+</body>
+</html>
